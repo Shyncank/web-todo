@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+}
+
+.navbar {
+  display: flex;
+  height: 20%;
+  background: #19191c;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.navbar-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.navbar-menu a {
+  color: white;
+}
+
+.sidebar {
+  height: 100%;
+  background-color: #111827;
+  position: fixed;
+}
+
+.sidebar .header {
+  display: flex;
+  gap: 10px;
+  padding: 40px;
+  color: white !important;
+  border-bottom: 1px solid white;
+}
+
+.sidebar .main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.sidebar .footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.sidebar .main .list-item {
+  color: white;
+}
+
+.sidebar .main .list-item div {
+  display: flex;
+  gap: 5px;
+  color: white;
+  padding: 10px;
+}
+
+.sidebar .main .list-item div span {
+  margin-left: 10px;
+}
+
+.sidebar .main .list-item:hover {
+  background: #ff9900;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.date {
+  height: 30%;
+}
+
+.tasks {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-task {
+  height: 8%;
+  position: fixed;
+  right: 25px;
+  left: 22%;
+  bottom: 10px;
+  display: flex;
+}
+
+.input-task input {
+  width: 100%;
+  background-color: #19191c;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.input-task input:focus {
+  background-color: #19191c;
+  color: white;
+}
+
+/* @media only screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 30%;
+  }
+
+  .right {
+    width: 70%;
+  }
+} */
